@@ -1,4 +1,67 @@
 {
+  "meta": {
+    "version": "2014-12-13"
+  },
+
   "name": "Ronald Hong",
-  "version": "2014-12-13"
+  "educations": [
+    {
+      "name": "_Tufts University_ - School of Engineering",
+      "location": "Medford, MA",
+      "start_date": "September 2009",
+      "end_date": "May 2013",
+      "bullets": [
+        "B.S., _Electrical Engineering_",
+        "GPA: 3.67, _magna cum laude_"
+      ]
+    }
+  ],
+  "experiences": [
+    {
+      "name": "Fiksu",
+      "position": "Software Engineer",
+      "location": "Boston, MA",
+      "start_date": "June 2013",
+      "end_date": "present",
+      "bullets": [
+        "Developed applications from backend to front in Ruby on Rails hosted on Amazon Web Services (AWS).",
+        "Built robust software to withstand the computing and storage demands of big data.",
+        "Wrote stateless programs that take advantage of cloud computing by scaling the number and size of server instances seamlessly.",
+        "Leveraged automated testing (RSpec) to deliver a well-tested product with high confidence and maximum efficiency.",
+        "Worked in an Agile software development team, enabling high adaptability and flexible release schedules.",
+        "Managed a cross-team project by designing system architecture in collaboration with colleagues, writing technical specs, and delegating tasks."
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "type": "programming",
+      "name": "Ruby"
+    },
+    {
+      "type": "programming",
+      "name": "Rails"
+    },
+    {
+      "type": "programming",
+      "name": "PostgreSQL"
+    },
+    {
+      "type": "programming",
+      "name": "Python"
+    },
+    {
+      "type": "programming",
+      "name": "Javascript"
+    },
+    {
+      "type": "programming",
+      "name": "HTML5"
+    },
+    {
+      "type": "programming",
+      "name": "CSS3"
+    }
+
+  ]
 }

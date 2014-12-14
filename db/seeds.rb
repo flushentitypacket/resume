@@ -1,5 +1,5 @@
 resume = JSON.parse(File.read('db/flat/resume.json'))
-Cv.create!(value: resume, version: resume['version'])
+Cv.create!(value: resume, version: resume['meta']['version'])
 
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
