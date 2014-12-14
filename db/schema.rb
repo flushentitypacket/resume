@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(version: 20141214010807) do
 
   create_table "cvs", force: true do |t|
     t.text     "value"
-    t.boolean  "is_current"
+    t.datetime "version"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
