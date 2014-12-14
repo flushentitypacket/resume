@@ -1,4 +1,7 @@
-<h1>Main#index</h1>
-<p><%= @message %></p>
-
-<%= link_to('Resume/CV', { controller: :cv, action: :index }, class: "btn btn-lg btn-primary") %>
+<div class='jumbotron'>
+  <div class='container'>
+    <h1>Ronald Hong</h1>
+    <p><%= @message %></p>
+    <%= link_to('Resume/CV', cv_index_path, class: "btn btn-lg btn-primary") %>
+  </div>
+</div>
