@@ -36,31 +36,38 @@
   "skills": [
     {
       "type": "programming",
-      "name": "Ruby"
+      "name": "Ruby",
+      "proficiency": "25"
     },
     {
       "type": "programming",
-      "name": "Rails"
+      "name": "Rails",
+      "proficiency": "25"
     },
     {
       "type": "programming",
-      "name": "PostgreSQL"
+      "name": "PostgreSQL",
+      "proficiency": "15"
     },
     {
       "type": "programming",
-      "name": "Python"
+      "name": "Python",
+      "proficiency": "10"
     },
     {
       "type": "programming",
-      "name": "Javascript"
+      "name": "Javascript",
+      "proficiency": "10"
     },
     {
       "type": "programming",
-      "name": "HTML5"
+      "name": "HTML5",
+      "proficiency": "10"
     },
     {
       "type": "programming",
-      "name": "CSS3"
+      "name": "CSS3",
+      "proficiency": "10"
     }
 
   ]
