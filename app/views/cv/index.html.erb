@@ -19,6 +19,11 @@
   <p><%= experience['location'] %></p>
   <p><%= experience['start_date'] %> - <%= experience['end_date'] %></p>
   <ul>
+    <% experience['skills'].each do |skill| %>
+      <li><%= skill %></li>
+    <% end %>
+  </ul>
+  <ul>
     <% experience['bullets'].each do |bullet| %>
       <li><%= bullet %></li>
     <% end %>
