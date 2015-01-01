@@ -1,2 +1,35 @@
-<h1>Cv#index</h1>
-<p><%= @cv.value %></p>
+<h1>Ronald Hong</h1>
+
+<h2>Education</h2>
+<% @cv.value['educations'].each do |education| %>
+  <h3><%= education['name'] %></h3>
+  <p><%= education['location'] %></p>
+  <p><%= education['start_date'] %> - <%= education['end_date'] %></p>
+  <ul>
+    <% education['bullets'].each do |bullet| %>
+      <li><%= bullet %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+<h2>Experience</h2>
+<% @cv.value['experiences'].each do |experience| %>
+  <h3><%= experience['name'] %></h3>
+  <p><%= experience['position'] %></p>
+  <p><%= experience['location'] %></p>
+  <p><%= experience['start_date'] %> - <%= experience['end_date'] %></p>
+  <ul>
+    <% experience['bullets'].each do |bullet| %>
+      <li><%= bullet %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+<h2>Skills</h2>
+<% @cv.value['skills'].group_by { |skill| skill['type'] }.each do |type, _skills| %>
+  <h3><%= type %></h3>
+    <% _skills.each do |skill| %>
+      <li><%= skill['name'] %></li>
+    <% end %>
+  </ul>
+<% end %>
