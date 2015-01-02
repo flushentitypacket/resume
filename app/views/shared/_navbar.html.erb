@@ -4,16 +4,16 @@
     </div>
     <div id="navbar">
       <ul class="nav navbar-nav">
-        <li class="<%= 'active' if current_page?(root_path) %>">
+        <li>
           <%= link_to('Home', root_path) %></li>
-        <li class="<%= 'active' if current_page?(cv_index_path) %>">
+        <li>
           <%= link_to('Resume', cv_index_path) %></li>
-        <li class="<%= 'active' if current_page?('') %>">
-          <%= link_to('About', '') %></li>
-        <li class="<%= 'active' if current_page?('') %>">
-          <%= link_to('Projects', '') %></li>
-        <li class="<%= 'active' if current_page?('') %>">
-          <%= link_to('Contact', '') %></li>
+        <li>
+          <%= link_to('About', '#about') %></li>
+        <li>
+          <%= link_to('Projects', '#projects') %></li>
+        <li>
+          <%= link_to('Contact', '#contact') %></li>
       </ul>
     </div>
   </div>
