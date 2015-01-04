@@ -1,15 +1,23 @@
+<div class='container'>
+
 <h1>Ronald Hong</h1>
 
 <h2>Education</h2>
 <% @cv.value['educations'].each do |education| %>
-  <h3><%= education['name'] %></h3>
-  <p><%= education['location'] %></p>
-  <p><%= education['start_date'] %> - <%= education['end_date'] %></p>
-  <ul>
-    <% education['bullets'].each do |bullet| %>
-      <li><%= bullet %></li>
-    <% end %>
-  </ul>
+  <div class='panel panel-default'>
+    <div class='panel-heading' role='tab'>
+      <h3 class='panel-title'><%= education['name'] %></h3>
+    </div>
+    <div class='panel-body'>
+      <p><%= education['location'] %></p>
+      <p><%= education['start_date'] %> - <%= education['end_date'] %></p>
+      <ul>
+        <% education['bullets'].each do |bullet| %>
+          <li><%= bullet %></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
 <% end %>
 
 <h2>Experience</h2>
@@ -38,3 +46,5 @@
     <% end %>
   </ul>
 <% end %>
+
+</div>
