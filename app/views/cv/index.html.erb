@@ -6,11 +6,21 @@
 <% @cv.value['educations'].each do |education| %>
   <div class='panel panel-default'>
     <div class='panel-heading' role='tab'>
-      <h3 class='panel-title'><%= education['name'] %></h3>
+      <div class='row'>
+        <div class='col-xs-8'>
+          <h3 class='panel-title'>
+            <%= education['name'] %>
+            <small><%= education['location'] %></small>
+          </h3>
+        </div>
+        <div class='col-xs-4'>
+          <span class='pull-right'>
+            <%= education['start_date'] %> - <%= education['end_date'] %>
+          </span>
+        </div>
+      </div>
     </div>
     <div class='panel-body'>
-      <p><%= education['location'] %></p>
-      <p><%= education['start_date'] %> - <%= education['end_date'] %></p>
       <ul>
         <% education['bullets'].each do |bullet| %>
           <li><%= bullet %></li>
