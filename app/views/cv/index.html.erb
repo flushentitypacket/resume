@@ -14,20 +14,12 @@
 
 <h2>Experience</h2>
 <% @cv.value['experiences'].each do |experience| %>
-  <h3><%= experience['name'] %></h3>
-  <p><%= experience['position'] %></p>
-  <p><%= experience['location'] %></p>
-  <p><%= experience['start_date'] %> - <%= experience['end_date'] %></p>
-  <ul>
-    <% experience['skills'].each do |skill| %>
-      <li><%= skill %></li>
-    <% end %>
-  </ul>
-  <ul>
-    <% experience['bullets'].each do |bullet| %>
-      <li><%= bullet %></li>
-    <% end %>
-  </ul>
+  <%= render partial: 'shared/collapsible_panel',
+    locals: {
+      title: experience['name'],
+      subtitle: "#{experience['position']} - #{experience['location']}",
+      right_title: "#{experience['start_date']} - #{experience['end_date']}",
+      body: "skills: #{experience['skills']} otherstuff: #{experience['bullets']}" } %>
 <% end %>
 
 <h2>Skills</h2>
