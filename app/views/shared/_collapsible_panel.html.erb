@@ -14,9 +14,16 @@
       </div>
     </div>
   </div>
-  <div class='panel-body'>
-    <ul>
-      <%= body ||= '' %>
+  <% if body ||= nil %>
+    <div class='panel-body'>
+      <%= body %>
+    </div>
+  <% end %>
+  <% if list ||= nil %>
+    <ul class='list-group'>
+      <% list.each do |item| %>
+        <li class="list-group-item"><%= item %></li>
+      <% end %>
     </ul>
-  </div>
+  <% end %>
 </div>
