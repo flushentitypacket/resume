@@ -18,6 +18,7 @@
     locals: {
       title: experience['name'],
       subtitle: "#{experience['position']} - #{experience['location']}",
+      extra: iconify_collection(experience['skills']),
       right_title: "#{experience['start_date']} - #{experience['end_date']}",
       list: experience['bullets'] } %>
 <% end %>
