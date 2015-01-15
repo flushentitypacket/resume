@@ -6,13 +6,15 @@
   "name": "Ronald Hong",
   "educations": [
     {
-      "name": "Tufts University, School of Engineering",
+      "name": "Tufts University",
+      "position": "School of Engineering",
       "location": "Medford, MA",
       "start_date": "September 2009",
       "end_date": "May 2013",
       "bullets": [
         "B.S., Electrical Engineering",
-        "GPA: 3.67, magna cum laude"
+        "GPA: 3.67",
+        "magna cum laude"
       ]
     }
   ],
@@ -24,7 +26,7 @@
       "start_date": "June 2013",
       "end_date": "present",
       "skills": [
-        "Ruby", "Rails", "PostgreSQL", "Javascript", "HTML5", "CSS3"
+        "Ruby", "Rails", "Postgres", "Javascript", "HTML5", "CSS3"
       ],
       "bullets": [
         "Developed applications from backend to front in Ruby on Rails hosted on Amazon Web Services (AWS).",
