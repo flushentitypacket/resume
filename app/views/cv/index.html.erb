@@ -7,9 +7,9 @@
   <%= render partial: 'shared/collapsible_panel',
     locals: {
       title: education['name'],
-      subtitle: education['location'],
+      subtitle: "#{education['position']} - #{education['location']}",
       right_title: "#{education['start_date']} - #{education['end_date']}",
-      body: education['bullets'] } %>
+      list: education['bullets'] } %>
 <% end %>
 
 <h2>Experience</h2>
@@ -19,7 +19,7 @@
       title: experience['name'],
       subtitle: "#{experience['position']} - #{experience['location']}",
       right_title: "#{experience['start_date']} - #{experience['end_date']}",
-      body: "skills: #{experience['skills']} otherstuff: #{experience['bullets']}" } %>
+      list: experience['bullets'] } %>
 <% end %>
 
 <h2>Skills</h2>
