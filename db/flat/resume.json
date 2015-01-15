@@ -26,7 +26,7 @@
       "start_date": "June 2013",
       "end_date": "present",
       "skills": [
-        "Ruby", "Rails", "Postgres", "Javascript", "HTML5", "CSS3"
+        "Ruby", "Rails", "Postgres", "Javascript"
       ],
       "bullets": [
         "Developed applications from backend to front in Ruby on Rails hosted on Amazon Web Services (AWS).",
