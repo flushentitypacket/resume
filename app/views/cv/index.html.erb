@@ -4,30 +4,12 @@
 
 <h2>Education</h2>
 <% @cv.value['educations'].each do |education| %>
-  <div class='panel panel-default'>
-    <div class='panel-heading' role='tab'>
-      <div class='row'>
-        <div class='col-xs-8'>
-          <h3 class='panel-title'>
-            <%= education['name'] %>
-            <small><%= education['location'] %></small>
-          </h3>
-        </div>
-        <div class='col-xs-4'>
-          <span class='pull-right'>
-            <%= education['start_date'] %> - <%= education['end_date'] %>
-          </span>
-        </div>
-      </div>
-    </div>
-    <div class='panel-body'>
-      <ul>
-        <% education['bullets'].each do |bullet| %>
-          <li><%= bullet %></li>
-        <% end %>
-      </ul>
-    </div>
-  </div>
+  <%= render partial: 'shared/collapsible_panel',
+    locals: {
+      title: education['name'],
+      subtitle: education['location'],
+      right_title: "#{education['start_date']} - #{education['end_date']}",
+      body: education['bullets'] } %>
 <% end %>
 
 <h2>Experience</h2>
