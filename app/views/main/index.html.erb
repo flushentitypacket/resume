@@ -2,14 +2,14 @@
   <div class='container'>
     <h1>Ronald Hong</h1>
     <span>Powered by:</span>
-    <%= image_tag "icons/rails.png", height: '30' %>
-    <%= image_tag "icons/postgres.png", height: '30' %>
-    <%= image_tag "icons/nginx.png", height: '30' %>
-    <%= image_tag "icons/unicorn.png", height: '30' %>
-    <%= image_tag "icons/bootstrap.png", height: '30' %>
-    <%= image_tag "icons/github.png", height: '30' %>
-    <%= image_tag "icons/digitalocean.png", height: '30' %>
-    <%= image_tag "icons/ubuntu.png", height: '30' %>
+    <%= link_to image_tag("icons/rails.png", height: '30'), 'http://rubyonrails.org'%>
+    <%= link_to image_tag("icons/postgres.png", height: '30'), 'http://postgresql.org' %>
+    <%= link_to image_tag("icons/nginx.png", height: '30'), 'http://nginx.com' %>
+    <%= link_to image_tag("icons/unicorn.png", height: '30'), 'https://github.com/defunkt/unicorn' %>
+    <%= link_to image_tag("icons/bootstrap.png", height: '30'), 'http://getbootstrap.com/' %>
+    <%= link_to image_tag("icons/github.png", height: '30'), 'https://github.com/' %>
+    <%= link_to image_tag("icons/digitalocean.png", height: '30'), 'https://www.digitalocean.com/' %>
+    <%= link_to image_tag("icons/ubuntu.png", height: '30'), 'http://ubuntu.com' %>
     <p><%= @message %></p>
     <%= link_to('Resume', cv_index_path, class: "btn btn-lg btn-primary") %>
   </div>
