@@ -17,10 +17,7 @@
       list: experience['bullets'] } %>
 <% end %>
 
-<% @cv.value['skills'].group_by { |skill| skill['type'] }.each do |type, _skills| %>
-  <h3><%= type %></h3>
-    <% _skills.each do |skill| %>
-      <li><%= skill['name'] %></li>
-    <% end %>
-  </ul>
-<% end %>
+<%= render partial: 'shared/collapsible_panel',
+  locals: {
+    title: 'Skills',
+    list: @cv.value['skills'].map { |s| s['name'] } } %>
