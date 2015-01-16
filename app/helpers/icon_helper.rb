@@ -4,8 +4,6 @@ module IconHelper
   end
 
   def iconify(s, height = 18)
-    puts "*"*100
-    puts s
     rel_icon_paths = Dir.glob('app/assets/images/icons/*.png').
       map { |p| p.gsub('app/assets/images/', '') }
     path_by_icon_name = rel_icon_paths.
