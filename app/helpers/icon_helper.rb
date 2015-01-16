@@ -9,7 +9,7 @@ module IconHelper
     path_by_icon_name = rel_icon_paths.
       index_by { |p| p.gsub('icons/', '').gsub('.png', '') }
     if path = path_by_icon_name[s.downcase]
-      return image_tag(path, height: height).html_safe
+      return image_tag(path, height: height, title: s).html_safe
     else
       return nil
     end
