@@ -1,9 +1,14 @@
+<% @counter ||= 0 %>
+<% @counter += 1 %>
+
 <div class='panel panel-default'>
   <div class='panel-heading' role='tab'>
     <div class='row'>
       <div class='col-xs-8'>
         <h3 class='panel-title'>
-          <%= title ||= '' %>
+          <a class="" data-toggle="collapse" href='<%= "#collapseListGroup#{@counter}" %>' aria-expanded="true" aria-controls='<%= "collapseListGroup#{@counter}" %>'>
+            <%= title ||= '' %>
+          </a>
           <small><%= subtitle ||= '' %></small>
           <%= extra ||= '' %>
         </h3>
@@ -15,16 +20,18 @@
       </div>
     </div>
   </div>
-  <% if body ||= nil %>
-    <div class='panel-body'>
-      <%= body %>
-    </div>
-  <% end %>
-  <% if list ||= nil %>
-    <ul class='list-group'>
-      <% list.each do |item| %>
-        <li class="list-group-item"><%= item %></li>
-      <% end %>
-    </ul>
-  <% end %>
+  <div id='<%= "collapseListGroup#{@counter}" %>' class="panel-collapse collapse in" role="tabpanel" aria-labelledby='<%= "collapseListGroupHeading#{@counter}" %>' aria-expanded="true">
+    <% if body ||= nil %>
+      <div class='panel-body'>
+        <%= body %>
+      </div>
+    <% end %>
+    <% if list ||= nil %>
+      <ul class='list-group'>
+        <% list.each do |item| %>
+          <li class="list-group-item"><%= item %></li>
+        <% end %>
+      </ul>
+    <% end %>
+  </div>
 </div>
