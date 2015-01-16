@@ -1,3 +1,5 @@
+<div class='panel-group'>
+
 <% @cv.value['educations'].each do |education| %>
   <%= render partial: 'shared/collapsible_panel',
     locals: {
@@ -21,3 +23,5 @@
   locals: {
     title: 'Skills',
     list: @cv.value['skills'].map { |s| s['name'] } } %>
+
+</div>
