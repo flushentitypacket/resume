@@ -6,13 +6,15 @@
   "name": "Ronald Hong",
   "educations": [
     {
-      "name": "Tufts University - School of Engineering",
+      "name": "Tufts University",
+      "position": "School of Engineering",
       "location": "Medford, MA",
       "start_date": "September 2009",
       "end_date": "May 2013",
       "bullets": [
         "B.S., Electrical Engineering",
-        "GPA: 3.67, magna cum laude"
+        "GPA: 3.67",
+        "magna cum laude"
       ]
     }
   ],
@@ -24,7 +26,7 @@
       "start_date": "June 2013",
       "end_date": "present",
       "skills": [
-        "Ruby", "Rails", "PostgreSQL", "Javascript", "HTML5", "CSS3"
+        "Ruby", "Rails", "Postgres", "Javascript"
       ],
       "bullets": [
         "Developed applications from backend to front in Ruby on Rails hosted on Amazon Web Services (AWS).",
@@ -32,7 +34,36 @@
         "Wrote stateless programs that take advantage of cloud computing by scaling the number and size of server instances seamlessly.",
         "Leveraged automated testing (RSpec) to deliver a well-tested product with high confidence and maximum efficiency.",
         "Worked in an Agile software development team, enabling high adaptability and flexible release schedules.",
-        "Managed a cross-team project by designing system architecture in collaboration with colleagues, writing technical specs, and delegating tasks."
+        "Managed a cross-team project by designing system architecture in collaboration with colleagues, writing technical specs and delegating tasks."
+      ]
+    },
+    {
+      "name": "GE Healthcare",
+      "position": "Software Engineering Intern",
+      "location": "Waukesha, WI",
+      "start_date": "May 2012",
+      "end_date": "August 2012",
+      "skills": [
+        "OpenCL", "C++", "Python"
+      ],
+      "bullets": [
+        "Optimized a parallel-processing Fast Fourier Transform (FFT) implementation using OpenCL language, improving upon existing optimizations by speed-ups of over 18%.",
+        "Designed and executed performance benchmarking methodology for AMD parallel computing platforms.",
+        "Identified, investigated, and resolved bugs in alpha firmware and software.",
+        "Cooperated with internationally-based engineers to jointly achieve project performance objectives."
+      ]
+    },
+    {
+      "name": "Stripes39",
+      "position": "Data Quality Assurance Lead",
+      "location": "Seattle, WA",
+      "start_date": "May 2011",
+      "end_date": "September 2011",
+      "skills": [],
+      "bullets": [
+        "Developed and effected quality assurance protocol for a database of thousands of man-hours’ worth of data.",
+        "Managed and trained a team to carry out quality assurance on research by in-house and outsourced staff.",
+        "Built and utilized mathematical models to advise management on projects; topics including project scope, necessary database size, optimal number of staff, and staff training."
       ]
     }
   ],

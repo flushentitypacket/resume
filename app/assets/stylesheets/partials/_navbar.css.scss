@@ -1,1 +1,9 @@
-body { padding-top: 40px; }
+$navbar_height: 50px;
+
+body { padding-top: $navbar_height; }
+// NOTE: Anything that has an anchor link needs to have its position corrected
+// in order to account for the navbar.
+.anchor {
+  padding-top: $navbar_height;
+  margin-top: -$navbar_height;
+}

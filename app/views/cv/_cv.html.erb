@@ -1,0 +1,27 @@
+<div class='panel-group'>
+
+<% @cv.value['educations'].each do |education| %>
+  <%= render partial: 'shared/collapsible_panel',
+    locals: {
+      title: education['name'],
+      subtitle: "#{education['position']} - #{education['location']}",
+      right_title: "#{education['start_date']} - #{education['end_date']}",
+      list: education['bullets'] } %>
+<% end %>
+
+<% @cv.value['experiences'].each do |experience| %>
+  <%= render partial: 'shared/collapsible_panel',
+    locals: {
+      title: experience['name'],
+      subtitle: "#{experience['position']} - #{experience['location']}",
+      extra: iconify_collection(experience['skills']),
+      right_title: "#{experience['start_date']} - #{experience['end_date']}",
+      list: experience['bullets'] } %>
+<% end %>
+
+<%= render partial: 'shared/collapsible_panel',
+  locals: {
+    title: 'Skills',
+    list: @cv.value['skills'].map { |s| s['name'] } } %>
+
+</div>
