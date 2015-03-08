@@ -1,0 +1,42 @@
+<%
+  # NOTE(rhong):
+  # This is the first thing I thought of to solve this problem.
+  # I am not sure if this is a good solution.
+  @counter ||= 0
+  @counter += 1
+%>
+
+<div class='panel panel-default'>
+  <div class='panel-heading' role='tab'>
+    <div class='row'>
+      <div class='col-xs-8'>
+        <h3 class='panel-title'>
+          <a data-toggle="collapse" href='<%= "#collapseListGroup#{@counter}" %>' aria-expanded="false" aria-controls='<%= "collapseListGroup#{@counter}" %>'>
+            <%= title ||= '' %>
+          </a>
+          <small><%= subtitle ||= '' %></small>
+          <%= extra ||= '' %>
+        </h3>
+      </div>
+      <div class='col-xs-4'>
+        <span class='pull-right'>
+          <%= right_title ||= '' %>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div id='<%= "collapseListGroup#{@counter}" %>' class="panel-collapse collapse" role="tabpanel" aria-labelledby='<%= "collapseListGroupHeading#{@counter}" %>' aria-expanded="true">
+    <% if body ||= nil %>
+      <div class='panel-body'>
+        <%= body %>
+      </div>
+    <% end %>
+    <% if list ||= nil %>
+      <ul class='list-group'>
+        <% list.each do |item| %>
+          <li class="list-group-item"><%= item %></li>
+        <% end %>
+      </ul>
+    <% end %>
+  </div>
+</div>

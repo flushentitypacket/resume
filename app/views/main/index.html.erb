@@ -10,19 +10,20 @@
     <%= link_to image_tag("icons/github.png", height: '30'), 'https://github.com/' %>
     <%= link_to image_tag("icons/digitalocean.png", height: '30'), 'https://www.digitalocean.com/' %>
     <%= link_to image_tag("icons/ubuntu.png", height: '30'), 'http://ubuntu.com' %>
-    <p><%= @message %></p>
-    <%= link_to('Resume', cv_index_path, class: "btn btn-lg btn-primary") %>
   </div>
 </div>
 
 <div class='container'>
-  <h1 id='about'>About</h1>
+  <h1 id='about' class='anchor'>About</h1>
   <p>Pretty cool guy</p>
 
-  <h1 id='projects'>Projects</h1>
+  <h1 id='resume' class='anchor'>Resume</h1>
+  <%= render 'cv/cv' %>
+
+  <h1 id='projects' class='anchor'>Projects</h1>
   <p>Pretty cool projects</p>
 
-  <h1 id='contact'>Contact</h1>
+  <h1 id='contact' class='anchor'>Contact</h1>
   <p>Leave your business card?</p>
   <%= render 'contacts/form' %>
 </div>
