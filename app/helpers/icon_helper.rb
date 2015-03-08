@@ -1,9 +1,13 @@
 module IconHelper
-  def iconify_collection(ary, height = 18)
+  DEFAULT_ICON_HEIGHT_PX = 18
+
+  def iconify_collection(ary, height = DEFAULT_ICON_HEIGHT_PX)
     return ary.map { |elt| iconify(elt, height) }.join("\n").html_safe
   end
 
-  def iconify(s, height = 18)
+  def iconify(s, height = DEFAULT_ICON_HEIGHT_PX)
+    # Not memoizing this stuff is technically slow, but there's not enough
+    # work to do that it matters. No need to add complexity (yet).
     rel_icon_paths = Dir.glob('app/assets/images/icons/*.png').
       map { |p| p.gsub('app/assets/images/', '') }
     path_by_icon_name = rel_icon_paths.
