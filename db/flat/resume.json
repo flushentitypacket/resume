@@ -1,6 +1,6 @@
 {
   "meta": {
-    "version": "2014-12-13"
+    "version": "2015-03-08"
   },
 
   "name": "Ronald Hong",
@@ -79,6 +79,45 @@
       "type": "programming",
       "name": "CSS3"
     }
-
+  ],
+  "projects": [
+    {
+      "name": "Lending Club Investment Bot",
+      "status": "production",
+      "tools": ["Ruby", "Minitest::Spec", "Sequel"],
+      "github": "github.com/flushentitypacket/lending_club_bot",
+      "description": "Bot that lends real money daily on the crowdsourced lending site, Lending Club."
+    },
+    {
+      "name": "Lending Club API Wrapper RubyGem",
+      "status": "production",
+      "tools": ["Ruby", "RubyGem", "Minitest::Unit"],
+      "github": "github.com/flushentitypacket/lending_club",
+      "website": "rubygems.org/gems/lending_club",
+      "description": "Ruby wrapper to the Lending Club API."
+    },
+    {
+      "name": "Einstein Beer",
+      "status": "development",
+      "tools": ["Rails"],
+      "github": "github.com/flushentitypacket/einstein-beer",
+      "description": "Upload a photo of a beer menu, and Einstein Beer will tell you all about your options."
+    },
+    {
+      "name": "Online Resume",
+      "status": "production",
+      "tools": ["Rails", "Bootstrap"],
+      "github": "github.com/flushentitypacket/resume",
+      "website": "ronaldhong.com",
+      "description": "My resume hosted on DigitalOcean."
+    },
+    {
+      "name": "Blog",
+      "status": "production",
+      "tools": ["Ruby", "Jekyll"],
+      "github": "github.com/flushentitypacket/flushentitypacket.github.io",
+      "website": "flushentitypacket.github.io",
+      "description": "My programming blog."
+    }
   ]
 }
