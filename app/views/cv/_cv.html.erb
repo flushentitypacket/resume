@@ -32,9 +32,11 @@
 <% end %>
 
 <h2>Skills</h2>
-<%= render partial: 'shared/collapsible_panel',
-  locals: {
-    title: 'Skills',
-    list: @cv.value['skills'].map { |s| s['name'] } } %>
+<% @cv.value['skills'].group_by { |s| s['type'] }.each do |type, _skills| %>
+  <%= render partial: 'shared/collapsible_panel',
+    locals: {
+      title: type.capitalize,
+      list: _skills.map { |s| s['name'] } } %>
+<% end %>
 
 </div>

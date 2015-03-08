@@ -52,32 +52,52 @@
   ],
   "skills": [
     {
-      "type": "programming",
+      "type": "language",
       "name": "Ruby"
     },
     {
-      "type": "programming",
-      "name": "Rails"
-    },
-    {
-      "type": "programming",
-      "name": "PostgreSQL"
-    },
-    {
-      "type": "programming",
-      "name": "Python"
-    },
-    {
-      "type": "programming",
+      "type": "language",
       "name": "Javascript"
     },
     {
-      "type": "programming",
+      "type": "language",
+      "name": "Python"
+    },
+    {
+      "type": "language",
+      "name": "PostgreSQL (SQL)"
+    },
+    {
+      "type": "language",
       "name": "HTML5"
     },
     {
-      "type": "programming",
+      "type": "language",
       "name": "CSS3"
+    },
+    {
+      "type": "frameworks",
+      "name": "Rails"
+    },
+    {
+      "type": "frameworks",
+      "name": "Bootstrap"
+    },
+    {
+      "type": "technologies",
+      "name": "AWS (Cloud Computing, S3, SQS, Dynamo)"
+    },
+    {
+      "type": "technologies",
+      "name": "DigitalOcean"
+    },
+    {
+      "type": "technologies",
+      "name": "Rightscale"
+    },
+    {
+      "type": "technologies",
+      "name": "Redis"
     }
   ],
   "projects": [
