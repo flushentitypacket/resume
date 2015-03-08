@@ -1,5 +1,6 @@
 <div class='panel-group'>
 
+<h2>Education</h2>
 <% @cv.value['educations'].each do |education| %>
   <%= render partial: 'shared/collapsible_panel',
     locals: {
@@ -9,6 +10,7 @@
       list: education['bullets'] } %>
 <% end %>
 
+<h2>Experience</h2>
 <% @cv.value['experiences'].each do |experience| %>
   <%= render partial: 'shared/collapsible_panel',
     locals: {
@@ -19,6 +21,18 @@
       list: experience['bullets'] } %>
 <% end %>
 
+<h2>Projects</h2>
+<% @cv.value['projects'].each do |project| %>
+  <%= render partial: 'shared/collapsible_panel',
+    locals: {
+      title: project['name'],
+      subtitle: project['github'],
+      # extra: project['status'],
+      right_title: project['website'],
+      list: [project['description'], project['tools'].join(", ")] } %>
+<% end %>
+
+<h2>Skills</h2>
 <%= render partial: 'shared/collapsible_panel',
   locals: {
     title: 'Skills',
