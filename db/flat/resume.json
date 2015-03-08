@@ -26,15 +26,12 @@
       "start_date": "June 2013",
       "end_date": "present",
       "skills": [
-        "Ruby", "Rails", "Postgres", "Javascript"
+        "Ruby", "Rails", "RSpec", "Postgres", "Javascript", "AWS", "Redis"
       ],
       "bullets": [
-        "Developed applications from backend to front in Ruby on Rails hosted on Amazon Web Services (AWS).",
-        "Built robust software to withstand the computing and storage demands of big data.",
-        "Wrote stateless programs that take advantage of cloud computing by scaling the number and size of server instances seamlessly.",
-        "Leveraged automated testing (RSpec) to deliver a well-tested product with high confidence and maximum efficiency.",
-        "Worked in an Agile software development team, enabling high adaptability and flexible release schedules.",
-        "Managed a cross-team project by designing system architecture in collaboration with colleagues, writing technical specs and delegating tasks."
+        "Built and maintained a robust data pipeline with high uptime, low latency, and high throughput.",
+        "Designed and delivered systems involving multiple engineering teams.",
+        "Created internal APIs to abstract away complex synchronization of multiple data sources."
       ]
     },
     {
@@ -47,61 +44,40 @@
         "OpenCL", "C++", "Python"
       ],
       "bullets": [
-        "Optimized a parallel-processing Fast Fourier Transform (FFT) implementation using OpenCL language, improving upon existing optimizations by speed-ups of over 18%.",
+        "Optimized a parallel-processing Fast Fourier Transform (FFT) implementation in OpenCL, improving upon existing optimizations by speed increases of more than 18%.",
         "Designed and executed performance benchmarking methodology for AMD parallel computing platforms.",
-        "Identified, investigated, and resolved bugs in alpha firmware and software.",
-        "Cooperated with internationally-based engineers to jointly achieve project performance objectives."
-      ]
-    },
-    {
-      "name": "Stripes39",
-      "position": "Data Quality Assurance Lead",
-      "location": "Seattle, WA",
-      "start_date": "May 2011",
-      "end_date": "September 2011",
-      "skills": [],
-      "bullets": [
-        "Developed and effected quality assurance protocol for a database of thousands of man-hours’ worth of data.",
-        "Managed and trained a team to carry out quality assurance on research by in-house and outsourced staff.",
-        "Built and utilized mathematical models to advise management on projects; topics including project scope, necessary database size, optimal number of staff, and staff training."
+        "Used buggy alpha versions of software and firmware, and identified and implemented bugfixes."
       ]
     }
   ],
   "skills": [
     {
       "type": "programming",
-      "name": "Ruby",
-      "proficiency": "25"
+      "name": "Ruby"
     },
     {
       "type": "programming",
-      "name": "Rails",
-      "proficiency": "25"
+      "name": "Rails"
     },
     {
       "type": "programming",
-      "name": "PostgreSQL",
-      "proficiency": "15"
+      "name": "PostgreSQL"
     },
     {
       "type": "programming",
-      "name": "Python",
-      "proficiency": "10"
+      "name": "Python"
     },
     {
       "type": "programming",
-      "name": "Javascript",
-      "proficiency": "10"
+      "name": "Javascript"
     },
     {
       "type": "programming",
-      "name": "HTML5",
-      "proficiency": "10"
+      "name": "HTML5"
     },
     {
       "type": "programming",
-      "name": "CSS3",
-      "proficiency": "10"
+      "name": "CSS3"
     }
 
   ]
