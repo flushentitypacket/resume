@@ -28,7 +28,8 @@
       title: project['name'],
       subtitle: project['github'] ? link_to(project['github'], "http://#{project['github']}") : nil,
       right_title: project['website'] ? link_to(project['website'], "http://#{project['website']}") : nil,
-      list: [project['description'], project['tools'].join(", ")] } %>
+      extra: iconify_collection(project['tools']),
+      list: [project['description']] } %>
 <% end %>
 
 <h2>Skills</h2>
